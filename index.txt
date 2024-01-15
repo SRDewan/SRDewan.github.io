@@ -137,15 +137,15 @@ WordPress
 Portfolio
 
 All
-Web design
-Applications
-Web development
+Computer Vision
+Machine Learning
+Robotics
 
 Select category
 All
-Web design
-Applications
-Web development
+Computer Vision
+Machine Learning
+Robotics
 
 alt = finance
 Finance

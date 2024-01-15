@@ -48,7 +48,7 @@
         <div class="info-content">
           <h1 class="name" title="Shaurya Dewan">Shaurya Dewan</h1>
 
-          <p class="title">Graduate Student</p>
+          <p class="title">Graduate Student @ CMU</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -708,7 +708,8 @@
           <h2 class="h2 article-title">Projects</h2>
         </header>
 
-        <section class="projects">
+        <!-- <section class="projects"> -->
+        <section class="blog-posts">
 
           <ul class="filter-list">
 
@@ -717,15 +718,19 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Computer Vision</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Machine Learning</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Robotics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Miscellaneous</button>
             </li>
 
           </ul>
@@ -749,102 +754,551 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Computer Vision</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Machine Learning</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Robotics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Miscellaneous</button>
               </li>
 
             </ul>
 
           </div>
 
-	  <ol class="timeline-list">
+          <ul class="blog-posts-list">
 
-	    <li class="timeline-item">
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="https://ivl.cs.brown.edu/projects/canonicalfields/">
 
-	      <h4 class="h4 timeline-item-title">Canonical Fields: Self-Supervised Learning of Pose-Canonicalized Neural Fields</h4>
-	      <h5 class="h5">Robotics Research Center (RRC) @ IIIT-H</h5>
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
 
-	      <!--<span>2007 — 2008</span>-->
+                <div class="blog-content">
 
-	      <p class="timeline-text">
-	        Collaborated with Brown University to develop a pipeline, CaFi-Net, as a co-first author for self-supervised canonicalization of NeRF-generated fields in PyTorch-lighting; resulted in a publication in CVPR 2023 as a highlight paper. This pipeline employed NeRFs, Tensor Field Networks (TFNs), spherical harmonics, and MLPs. This project was undertaken under the mentorship of Prof. Madhava Krishna (IIIT-H) and Prof. Srinath Sridhar (Brown).
-	      </p>
+                  <div class="blog-meta">
+                    <p class="blog-category">RRC @ IIIT-H, IVL @ Brown</p>
+                    <!-- <p class="blog-category">Computer Vision</p>
 
-	    </li>
+                    <span class="dot"></span> -->
 
-	    <li class="timeline-item">
+                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
 
-	      <h4 class="h4 timeline-item-title">Pose-Shape Optimizer Pipeline</h4>
-	      <h5 class="h5">Robotics Research Center (RRC) @ IIIT-H</h5>
+                  <h3 class="h4 blog-item-title">Canonical Fields: Self-Supervised Learning of Pose-Canonicalized Neural Fields (CVPR 2023)</h3>
 
-	      <!--<span>2006 — 2007</span>-->
+                  <p class="blog-text">
+                    Collaborated with Brown University to develop a pipeline, CaFi-Net, as a co-first author for self-supervised canonicalization of NeRF-generated fields in PyTorch-lighting; resulted in a <b>publication in CVPR 2023 as a highlight paper</b>. In this work, we extend the notion of equivariance to continuous vector fields and extend 3D point cloud networks to operate directly on NeRFs. We created and released a new dataset of 1300 pre-trained NeRF models of 13 common ShapeNet categories. This pipeline employed NeRFs, Tensor Field Networks (TFNs), spherical harmonics, and MLPs. This project was undertaken under the mentorship of Prof. Madhava Krishna (IIIT-H) and Prof. Srinath Sridhar (Brown).
+                  </p>
 
-	      <p class="timeline-text" style="display:inline">
-	        Recreated <a href="https://ieeexplore.ieee.org/abstract/document/8205990/">a pipeline</a> in MATLAB and Ceres that reconstructs and localizes a vehicle in 3D given a monocular 2D image using vehicle shape priors. Further applied multi-view optimization over the shape to stabilize it across sequences of video frames. Made use of a deep stacked hourglass CNN model to estimate vehicle key points in the images.
-	      </p>
+                </div>
 
-	    </li>
+              </a>
+            </li>
 
-	    <li class="timeline-item">
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/SRDewan/Pose-Shape-Optimizer-Pipeline">
 
-	      <h4 class="h4 timeline-item-title">Infosys Synthetic Data Generation</h4>
-	      <h5 class="h5">Precog Research Group @ IIIT-H</h5>
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
 
-	      <!--<span>2002 — 2004</span>-->
+                <div class="blog-content">
 
-	      <p class="timeline-text">
-	        Assembled a relationship-preserving multi-table synthetic data generation system using a hierarchy-preserving variation of CTGAN from the SDV framework in Python which has since been integrated into the Infosys Enterprise Data Privacy Suite (iEDPS). Also employed various classification and regression models such as Random Forest, Lasso, Ridge, SVR, etc. to model and enforce relationships between attributes.
-	      </p>
+                  <div class="blog-meta">
+                    <p class="blog-category">RRC @ IIIT-H</p>
+                    <!-- <p class="blog-category">Computer Vision</p>
 
-	    </li>
+                    <span class="dot"></span> -->
 
-	    <li class="timeline-item">
+                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
 
-	      <h4 class="h4 timeline-item-title">Infosys Data Discovery and Disposal</h4>
-	      <h5 class="h5">Precog Research Group @ IIIT-H</h5>
+                  <h3 class="h4 blog-item-title">Pose-Shape Optimizer Pipeline</h3>
 
-	      <!--<span>2002 — 2004</span>-->
+                  <p class="blog-text">
+                    Recreated a pipeline in MATLAB and Ceres that reconstructs and localizes a vehicle in 3D given a monocular 2D image. This involved deforming a 3D wireframe (obtained from vehicle shape priors using PCA) by estimating the pose and shape deformation such that the wireframe fit the vehcile keypoints when projected to 2D. Further applied multi-view optimization over the shape to stabilize it across sequences of video frames. Made use of a deep stacked hourglass CNN model to estimate vehicle key points in the images.
+                  </p>
 
-	      <p class="timeline-text">
-	        Collaborated with Infosys on automated data discovery and disposal in a heterogeneous data environment with data spread across different structured formats. We demonstrated a privacy-preserving, scalable, and efficient implementation of the data discovery pipeline in Python.
-	      </p>
+                </div>
 
-	    </li>
+              </a>
+            </li>
 
-	    <li class="timeline-item">
+            <li class="blog-post-item active" data-filter-item data-category="machine learning">
+              <a href="#">
 
-	      <h4 class="h4 timeline-item-title">Factly SACH Fact Check Search Engine</h4>
-	      <h5 class="h5">Precog Research Group @ IIIT-H</h5>
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
 
-	      <!--<span>2002 — 2004</span>-->
+                <div class="blog-content">
 
-	      <p class="timeline-text">
-	        Collaborated with Factly on analyzing and improving the reverse image search pipeline within their fact check search engine.
-	      </p>
+                  <div class="blog-meta">
+                    <p class="blog-category">Precog @ IIIT-H, Infosys</p>
+                    <!-- <p class="blog-category">Design</p>
 
-	    </li>
+                    <span class="dot"></span>
 
-	    <li class="timeline-item">
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
 
-	      <h4 class="h4 timeline-item-title">Curiosity & Entropy Driven Unsupervised RL in Multiple Environments</h4>
-	      <h5 class="h5">CMU</h5>
+                  <h3 class="h4 blog-item-title">Synthetic Multi-Table Data Generation</h3>
 
-	      <!--<span>2002 — 2004</span>-->
+                  <p class="blog-text">
+                    Assembled a relationship-preserving multi-table synthetic data generation system using a hierarchy-preserving variation of CTGAN from the SDV framework in Python which has since been <b>integrated into the Infosys Enterprise Data Privacy Suite (iEDPS)</b>. Also employed various classification and regression models such as Random Forest, Lasso, Ridge, SVR, etc. to model and enforce relationships between attributes. Our pipeline takes a small number of samples of the multi-table data as input and generates any number of samples of the same data as required by the user while preserving all the essential properties of the input data.
+                  </p>
 
-	      <p class="timeline-text">
-	        Developed a task-agnostic and partially environment-agnostic model that builds on top of previous works on unsupervised reinforcement learning driven by curiosity and entropy. 
-	      </p>
+                </div>
 
-	    </li>
+              </a>
+            </li>
 
-	  </ol>
+            <li class="blog-post-item active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Precog @ IIIT-H, Infosys</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Data Discovery and Disposal</h3>
+
+                  <p class="blog-text">
+                    Collaborated with Infosys on automated data discovery and disposal in a heterogeneous data environment with data spread across different structured formats. We demonstrated a privacy-preserving, scalable, and efficient implementation of the data discovery pipeline in Python.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Precog @ IIIT-H, Factly</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">SACH Fact Check Search Engine</h3>
+
+                  <p class="blog-text">
+                    Collaborated with Factly on analyzing and improving the reverse image search pipeline within their fact check search engine. I tested the performance of the existing pipeline, compared it with other baselines for reference, and tried out several preprocessing methods such as text removal, OCR, image cleaning, etc.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Intracranial Hemorrhage Segmentation</h3>
+
+                  <p class="blog-text">
+                    Architected a basic pipeline in Python based on the UNet architecture to segment out intracranial hemorrhages from NCCT Scans as part of the INSTANCE 2022 challenge.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CMU</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Needle Deep Learning Library</h3>
+
+                  <p class="blog-text">
+                    Implemented a PyTorch-like Deep Learning library from scratch including autodifferentiation and CUDA programming of linear operations such as matrix multiplication, transpose, convolution, etc. This library includes all the essential components used in fundamental Deep Learning models. Models like CNNs, transformers, MLPs, ResNet, etc. can be built and run using this library easily and the given codebase includes the implementation of a few such models.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="robotics">
+              <a href="https://arxiv.org/abs/2401.04198">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CMU</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Curiosity & Entropy Driven Unsupervised RL in Multiple Environments</h3>
+
+                  <p class="blog-text">
+                    Developed a task-agnostic and partially environment-agnostic model that builds on top of previous work on unsupervised reinforcement learning driven by curiosity and entropy-based objectives. We employed an entropy-based objective, a curiosity-based objective, a dynamic percentile sampling of worst-performing trajectories for both objectives during optimization and a more fluid KL Divergence constraint TRPO model. Training our model involves two phases: the first phase is the unsupervised training phase using the two earlier-mentioned objectives to obtain a generic task-agnositc model while the second phase is the supervised training phase using environment-derived rewards to finetune the model for a specific task.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/SRDewan/Unsupervised-Domain-Adaptation-by-Backpropagation">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Unsupervised Domain Adaptation By Backpropagation</h3>
+
+                  <p class="blog-text">
+                    Implemented a paper on unsupervised domain adaptation of neural networks using a gradient reversal layer and a GAN-inspired domain classifier loss in Pytorch. Performed various experiments such as the use of additional losses to improve results.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/SRDewan/Mobile-Robotics-and-Computer-Vision">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CMU, IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Mobile Robotics & Computer Vision</h3>
+
+                  <p class="blog-text">
+                    Implemented various algorithms and methods commonly used in Computer and Robotic Vision applications. The algorithms include ICP, DLT, stereo vision, bundle adjustment, SLAM, optical flow, graph-cut segmentation, etc. Used Python.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/SRDewan/Scrabble-Assistant">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Scrabble Assistant</h3>
+
+                  <p class="blog-text">
+                    Designed a system from scratch that extracts the Scrabble board from an image and suggests the best word for the user’s given 7 tiles and board configuration. Used Python for the backend logic and Node.js for the GUI.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/prajneya/SocialIIIT">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Peersity</h3>
+
+                  <p class="blog-text">
+                    Developed the friend recommendation system based on the Markov Clustering algorithm from scratch and contributed to the back-end and UI in HTML, CSS, Node.js, React, GraphQL, and MongoDB for an IIIT-H student social media platform.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="https://github.com/SRDewan/Wikipedia-Search-Engine">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Wikipedia Search Engine</h3>
+
+                  <p class="blog-text">
+                    Built a search engine that performs real-time querying on a 20GB index extracted from an 80GB Wikipedia dump in Python. Wrote the indexing algorithm and the tf-idf score-based ranking algorithm from scratch.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="https://github.com/SRDewan/C-Shell">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">C Shell</h3>
+
+                  <p class="blog-text">
+                    Built a bash-like shell from scratch in C. Implemented various functionality such as piping, redirection, flags, etc.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Wonkru</h3>
+
+                  <p class="blog-text">
+                    One of the co-founders of ”Wonkru” - a C2C e-commerce web app built using the MERN tech stack. Coded the entire back-end from scratch and contributed to the back-end and front-end integration and hosting. This project won ”Best Idea” in ”SummerUp” held by E-Cell.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="https://github.com/SRDewan/Brick-Breaker">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Brick Breaker Game</h3>
+
+                  <p class="blog-text">
+                    Implemented the classic brick breaker game in the terminal from scratch in Python without any special libraries such as PyGame. It has 3 levels where the final level is the boss level with a UFO!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="https://github.com/SRDewan/Crossroads-Game">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Crossroads Multiplayer Game</h3>
+
+                  <p class="blog-text">
+                    Designed and brought to life a multiplayer game where players need to make their character cross from one end of the screen to the other while avoiding obstacles (both stationary and dynamic). The game difficulty goes on increasing over time. Employed the PyGame library for this project.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
+              <a href="https://github.com/SRDewan/Hospital-Management-System">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">IIIT-H</p>
+                    <!-- <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Hospital Database Management System</h3>
+
+                  <p class="blog-text">
+                    Built a database management system for use in a hospital setting using SQL and Python. The system includes features such as tracking and booking appointments, room availability and reservation, bill tracking, etc.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+        </section>
 
             <!--<li class="project-item  active" data-filter-item data-category="web development">-->
               <!--<a href="#">-->

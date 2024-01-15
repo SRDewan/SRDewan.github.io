@@ -1042,6 +1042,13 @@ main {
   gap: 20px;
 }
 
+.blog-post-item { display: none; }
+
+.blog-post-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
 .blog-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -1751,7 +1758,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * BLOG
    */
-
+  .blog-posts-list { grid-template-columns: repeat(3, 1fr); }
   .blog-banner-box { height: 230px; }
 
 }
