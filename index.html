@@ -211,7 +211,7 @@
           </p>
 
           <p>
-	    Broadly, my research and academic interests lie in Computer Vision and Machine Learning. My long term goal is to work on complex systems that match and surpass human vision in processing visual information in all aspects such as object detection, recognition, semantic understanding, 3D understanding, etc. I envision systems that can extract all relevant information from visual inputs, contextualize this information and use it in combination with other modalities to make appropriate inferences and decisions. Within Vision, I am particularly passionate to work on 3D reconstruction, implicit representations and the intersection of 2D and 3D information processing. I am also keen to explore the domain of generative models with a focus on the recent advances made with stable diffusion models. In pursuit of my interests, I am currently searching for internship opportunities for the summer of 2024. Feel free to reach out to me with any such opportunities or even just to have a stimulating discussion on my work and/or recent trends in the fields mentioned above.
+	    Broadly, my research and academic interests lie in Computer Vision and Machine Learning. My long term goal is to work on complex systems that match and surpass human vision in processing visual information in all aspects such as object detection, recognition, semantic understanding, 3D understanding, etc. I envision systems that can extract all relevant information from visual inputs, contextualize this information and use it in combination with other modalities to make appropriate inferences and decisions. Within Vision, I am particularly passionate to work on 3D reconstruction, implicit representations and the intersection of 2D and 3D information processing. I am also keen to explore the domain of generative models with a focus on the recent advances made with stable diffusion models. In pursuit of my interests, I am currently searching for full-time job opportunities starting from the Spring of 2025. Feel free to reach out to me with any such opportunities or even just to have a stimulating discussion on my work and/or recent trends in the fields mentioned above.
           </p>
         </section>
 
@@ -353,7 +353,7 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
         
-        <embed src="./assets/pdfs/CS_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1000em">
+        <embed src="./assets/pdfs/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="1000em">
         </embed>
 
       </article>
@@ -381,6 +381,22 @@
           </div>
 
           <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Robotics Software Intern - Robotics Perception</h4>
+
+              <span>May 2024 — Aug 2024</span>
+
+              <p class="timeline-text">
+                NVIDIA <br />
+                <ol class="timeline-text">
+                <li>Enhanced the performance of the ESS 4.0 stereo perception model with better data (real data), more diverse augmentations, and architectural experiments. Improvements have since been integrated into the pipeline and will be part of ESS 4.1.</li>
+                <li>Boosted training time by 10x with distributed training and explored alternate evaluation methods to better quantify model performance.</li>
+                </ol>
+              </p>
+
+            </li>
 
             <li class="timeline-item">
 
@@ -450,8 +466,8 @@
 
               <p class="timeline-text">
                 Master of Science in Computer Vision <br />
-                CGPA: 4.00 / 4.00 <br />
-                Courses: Advanced Computer Vision, Intro to Robot Learning, Deep Learning Systems, Learning for 3D Vision (Ongoing)
+                CGPA: 4.17 / 4.00 <br />
+                Courses: Advanced Computer Vision, Deep Learning Systems, Multimodal Machine Learning, Learning for 3D Vision
               </p>
 
             </li>
@@ -560,6 +576,10 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn>Publications</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn>Computer Vision</button>
             </li>
 
@@ -596,6 +616,10 @@
               </li>
 
               <li class="select-item">
+                <button data-select-item>Publications</button>
+              </li>
+
+              <li class="select-item">
                 <button data-select-item>Computer Vision</button>
               </li>
 
@@ -617,8 +641,37 @@
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+            <li class="blog-post-item active" data-filter-item data-category="computer vision publications">
               <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/imgs/generalizable.jpg" alt="" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">PPL @ CMU</p>
+                    <!-- <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span> -->
+
+                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Generalizable 3D Gaussian Splatting in the Sparse Setting (Ongoing)</h3>
+
+                  <p class="blog-text">
+                    Currently leading a project on learning a model that can predict attributes of 3D gaussians in a single-forward pass without any optimization for a new scene at inference from sparse data (4-5 views) such that these gaussians can be rendered from any novel view.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="publications">
+              <a href="https://arxiv.org/abs/2406.05191">
 
                 <figure class="blog-banner-box">
                   <img src="./assets/imgs/diffusion.jpeg" alt="" loading="lazy">
@@ -635,10 +688,39 @@
                     <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
                   </div>
 
-                  <h3 class="h4 blog-item-title">Interpretability of Latent Diffusion Models (Ongoing)</h3>
+                  <h3 class="h4 blog-item-title">DiffusionPID: Interpreting Diffusion via Partial Information Decomposition (Under Review in NeurIPS 2024)</h3>
 
                   <p class="blog-text">
-                    Working on demystifying the black box that diffusion models are. Involves comparing the alignment and hierarchy of the denoised latent embeddings with the input text prompts' embeddings. We are also adapting circuit probing methods to discover subnetworks that are responsible for generating/injecting specific concepts like object-level color in the final generated images. 
+                    Led a research project (first author) on interpreting diffusion models by adapting the information theoretic concept of Partial Information Decomposition (PID) and conducted an extensive analysis to identify the model’s various failure modes and biases.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="publications">
+              <a href="https://stablesemantics.github.io/StableSemantics/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/imgs/stable_semantics.png" alt="" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CMU</p>
+                    <!-- <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span> -->
+
+                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
+                  </div>
+
+                  <h3 class="h4 blog-item-title">StableSemantics: A Synthetic Language-Vision Dataset of Semantic Representations in Naturalistic Images (Under Review in NeurIPS 2024)</h3>
+
+                  <p class="blog-text">
+                    Co-first author on a paper introducing a comprehensive dataset comprising 224K human-curated prompts, over 2 million synthetic diffusion-generated images, and 10 million semantic maps corresponding to individual nouns. Includes benchmarks on several vision tasks.
                   </p>
 
                 </div>
@@ -679,35 +761,6 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/imgs/generalizable.jpg" alt="" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">PPL @ CMU</p>
-                    <!-- <p class="blog-category">Computer Vision</p>
-
-                    <span class="dot"></span> -->
-
-                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
-                  </div>
-
-                  <h3 class="h4 blog-item-title">Generalizable 3D Gaussian Splatting in the Sparse Setting (Ongoing)</h3>
-
-                  <p class="blog-text">
-                    Currently leading a project on learning a model that can predict attributes of 3D gaussians in a single-forward pass without any optimization for a new scene at inference from sparse data (4-5 views) such that these gaussians can be rendered from any novel view.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item active" data-filter-item data-category="computer vision">
-              <a href="#">
-
-                <figure class="blog-banner-box">
                   <img src="./assets/imgs/editable.png" alt="" loading="lazy">
                 </figure>
 
@@ -722,10 +775,10 @@
                     <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
                   </div>
 
-                  <h3 class="h4 blog-item-title">Editing Segmented Objects in 3D Gaussian Splatting (Ongoing)</h3>
+                  <h3 class="h4 blog-item-title">GaussCraft: Language Driven Segmentation and Editing in 3D Using Gaussian Splatting</h3>
 
                   <p class="blog-text">
-                    Developing an extension of LangSplat to enable editing of a segmented object's appearance from text prompts by optimizing the gaussians' learnt CLIP embeddings. We learn to predict a gaussian's RGB properties from these embeddings to allow editing.
+                    Developed an extension of LangSplat to enable editing of a segmented object's appearance from text prompts by optimizing the gaussians' learnt CLIP embeddings. We learn to predict a gaussian's RGB properties from these embeddings to allow editing.
                   </p>
 
                 </div>
@@ -733,7 +786,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item active" data-filter-item data-category="computer vision">
+            <li class="blog-post-item active" data-filter-item data-category="publications">
               <a href="https://ivl.cs.brown.edu/projects/canonicalfields/">
 
                 <figure class="blog-banner-box">
